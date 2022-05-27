@@ -20,7 +20,7 @@ body {
     padding: 0;
     min-height: 100vh;
     max-width: 100%;
-    background-image: url(images/herobw.webp);
+    background-image: url(../images/herobw.webp);
     background-size: 100vh;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -110,7 +110,7 @@ header {
         display: block;
         position: absolute;
         z-index: 9999;
-        background: url(images/bars-solid-black.svg);
+        background: url(../images/bars-solid-black.svg);
         
         background-repeat: no-repeat;
         width: 1.25rem;
@@ -120,7 +120,7 @@ header {
         left: 2rem;
     }
     .mobile-sidebar-toggle[aria-expanded="true"] {
-        background-image: url(images/x-solid-white.svg);
+        background-image: url(../images/x-solid-white.svg);
     }
 
     footer {
