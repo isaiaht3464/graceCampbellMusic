@@ -22,7 +22,9 @@ body {
     max-width: 100%;
     background-image: url(../images/herobw.webp);
     background-size: 100vh;
+    background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
     overflow-x: hidden;
     font-family: 'Josefin Slab', 'Garamond', 'Times New Roman', Times, serif;
 }
@@ -179,8 +181,11 @@ header {
 footer {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 0;
     background-color: #252121;
     color: white;
     text-align: center;
+    min-width: 100%;
 }
