@@ -1,0 +1,81 @@
+body {
+    background-image: none;
+}
+
+#photoPage-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 250px;
+    margin: 10px;
+}
+
+.chasePic {
+    height: 188px;
+}
+
+.goFirstMix {
+    height: 186px;
+}
+
+.onStage {
+    height: 162px;
+}
+
+.longWay {
+    height: 185px;
+}
+
+.stageSide {
+    height: 168px;
+}
+
+.brightLight {
+    height: 158px;
+}
+
+.artGallery {
+    height: 190px;
+}
+
+.stripDistrict {
+    height: 302px;
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.photoNameWrapper {
+    margin-top: 3em;
+    margin-bottom: 0;
+
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#primary-navigation {
+    background-color: white;
+    color: black;
+}
+
+.mobile-sidebar-toggle {
+    background-image: url(../images/bars-solid.svg);
+}
+
+.mobile-sidebar-toggle[aria-expanded="true"] {
+    background-image: url(../images/x-solid.svg);
+}
