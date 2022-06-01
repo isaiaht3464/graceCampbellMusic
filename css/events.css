@@ -1,0 +1,64 @@
+body {
+    background-image: none;
+    max-height: 100%
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+#eventsPage-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.eventsPageContent {
+    margin-top: 0;
+    padding: 12px;
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.eventsNameWrapper {
+    margin-top: 3em;
+    margin-bottom: 0;
+
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.eventsPageTitle {
+    margin-bottom: 2em;
+}
+
+#primary-navigation {
+    background-color: white;
+    color: black;
+}
+
+.mobile-sidebar-toggle {
+    background-image: url(../images/bars-solid.svg);
+}
+
+.mobile-sidebar-toggle[aria-expanded="true"] {
+    background-image: url(../images/x-solid.svg);
+}
