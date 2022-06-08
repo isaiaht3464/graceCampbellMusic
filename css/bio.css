@@ -85,17 +85,25 @@ p {
 @media(min-width: 561px) {
 
     body {
-        justify-content: center;
+        justify-content: flex-start;
+        overflow: hidden;
     }
 
     #primary-navigation {
         background-color: black;
         color: white;
         margin-bottom: 0;
+        margin-top: 20px;
     }
 
     .nameWrapper {
         margin-top: 1.5em;
+    }
+
+    #bioPage-main {
+        margin-top: 10em;
+        justify-content: center;
+        align-items: center;
     }
 
     .bioContent {
@@ -111,5 +119,6 @@ p {
         width: 250px;
         margin-bottom: 1.5em;
     }
+    
 }
 
