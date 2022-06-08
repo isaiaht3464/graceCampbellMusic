@@ -11,6 +11,29 @@ a {
     color: inherit;
 }
 
+.navLink {
+    position: relative;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease-in;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -52,14 +75,14 @@ header {
 
 .navList-left {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     margin: 0;
     padding: 0;
 }
 
 .navList-right {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     margin: 0;
     padding: 0;
 }
@@ -202,6 +225,8 @@ footer {
     } 
 
     ul {
+        display: flex;
+        flex-flow: row nowrap;
         width: 33%;
         justify-content: space-between;
         margin: auto .75em auto .75em;
@@ -238,10 +263,14 @@ footer {
     }
 
     .navList-left {
+        display: flex;
+        flex-flow: row nowrap;
         margin-left: .75em;
     }
 
     .navList-right {
+        display: flex;
+        flex-flow: row nowrap;
         margin-right: .75em;
     }
     
@@ -268,6 +297,8 @@ footer {
     } 
 
     ul {
+        display: flex;
+        flex-flow: row nowrap;
         width: 40%;
         justify-content: space-between;
         margin: auto .75em auto .75em;
@@ -306,11 +337,15 @@ footer {
     }
 
     .navList-left {
+        display: flex;
+        flex-flow: row nowrap;
         margin-left: .2em;
         margin-right: 1em;
     }
 
     .navList-right {
+        display: flex;
+        flex-flow: row nowrap;
         margin-right: .2em;
         margin-left: 1em;
     }
