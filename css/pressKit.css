@@ -1,0 +1,86 @@
+body {
+    background-image: none;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 2em;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 60ch;
+}
+
+img {
+    width: 250px;
+}
+
+#pressKit-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.pressKitContent {
+    margin-top: 0;
+    padding: 12px;
+}
+
+.pressKitName {
+    margin-top: 3em;
+    margin-bottom: 0;
+
+}
+
+.testimonialWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#primary-navigation {
+    background-color: white;
+    color: black;
+}
+
+.mobile-sidebar-toggle {
+    background-image: url(../images/bars-solid.svg);
+}
+
+.mobile-sidebar-toggle[aria-expanded="true"] {
+    background-image: url(../images/x-solid.svg);
+}
