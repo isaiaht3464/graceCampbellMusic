@@ -1,5 +1,31 @@
 body {
     background-image: none;
+    justify-content: flex-start;
+}
+
+
+
+.navLink {
+    position: relative;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease-in;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
 }
 
 #photoPage-main {
@@ -44,10 +70,6 @@ img {
     height: 190px;
 }
 
-.stripDistrict {
-    height: 302px;
-}
-
 h1 {
     color: white;
     font-size: 32px;
@@ -78,4 +100,98 @@ h2 {
 
 .mobile-sidebar-toggle[aria-expanded="true"] {
     background-image: url(../images/x-solid.svg);
+}
+
+@media(min-width: 561px) {
+
+    body {
+        max-width: 100vw;
+    }
+
+    li {
+        margin-inline: 0;
+    }
+
+    ul {
+        justify-content: space-around;
+    }
+
+    #primary-navigation {
+        color: white;
+        background-color: black;
+        margin-top: 1em;
+        margin-bottom: 0;
+        max-width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .navListWrapper {
+        max-width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #photoPage-main {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .imagesWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-start: 1;
+        height: 100%;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 12px;
+        background-color: white;
+        border-radius: 1em;
+    }
+
+    .chasePic {
+        height: 175px;
+    }
+    
+    .goFirstMix {
+        height: 175px;
+    }
+    
+    .onStage {
+        height: 175px;
+    }
+    
+    .longWay {
+        height: 175px;
+    }
+    
+    .stageSide {
+        height: 175px;
+    }
+    
+    .brightLight {
+        height: 175px;
+    }
+    
+    .artGallery {
+        height: 175px;
+    }
+
+}
+
+@media(min-width: 900px) {
+   
+    .imagesWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-start: 1;
+        height: 100%;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 12px;
+        background-color: white;
+        border-radius: 1em;
+    }
+
 }
