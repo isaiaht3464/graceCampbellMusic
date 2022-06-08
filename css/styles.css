@@ -6,6 +6,11 @@ li {
     padding: 0;
 }
 
+ul {
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -215,7 +220,7 @@ footer {
 
 /* Screen Size Responsiveness" */
 
-@media(min-width: 560px) {
+@media(min-width: 561px) {
     i {
         margin-inline-end: 18px;
         margin-inline-start: 18px;
@@ -228,7 +233,7 @@ footer {
         display: flex;
         flex-flow: row nowrap;
         width: 33%;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin: auto .75em auto .75em;
     }
 
